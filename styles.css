@@ -44,19 +44,30 @@ button {
 .secondary-toolbar {
   display: flex;
 }
+.secondary-toolbar-right {
+  justify-content: flex-end;
+}
 
 .secondary-toolbar .toolbar-item {
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
+  justify-content: flex-end;
   align-items: center;
   margin: 0 20px;
 }
 
+@media (max-width: 996px) {
+  .secondary-toolbar .toolbar-item {
+    margin: 0 10px;
+  }
+}
+
 .secondary-toolbar .toolbar-item p {
-  margin-top: 6px;
-  font-size: 14px;
+  margin-top: 10px;
   text-align: center;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /* Helpers */
@@ -68,10 +79,10 @@ button {
   border-radius: 100px;
 }
 
-.fade-opacity-40 {
+.opacity-40 {
   opacity: 0.4;
 }
-.fade-opacity-60 {
+.opacity-60 {
   opacity: 0.6;
 }
 
