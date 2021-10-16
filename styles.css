@@ -9,6 +9,12 @@ body {
   align-items: center;
   background-color: #2c2d33;
 }
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
 
 .bar {
   background-color: #1f1f1f;
@@ -16,8 +22,53 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .bar > div {
   flex-shrink: 1;
-  height: 100%;
+}
+
+.main-toolbar {
+  height: 50px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1000px;
+  background: #2b2b33;
+}
+
+.divider {
+  width: 1px;
+  height: 24px;
+  background-color: white;
+  border-radius: 100px;
+}
+
+.fade-opacity-40 {
+  opacity: 0.4;
+}
+.fade-opacity-60 {
+  opacity: 0.6;
+}
+
+.round-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: all 200ms;
+}
+
+.round-btn:hover {
+  filter: brightness(0.8);
+}
+.round-btn:active {
+  filter: brightness(1);
+}
+
+.bg-white {
+  background: #fff;
+}
+.bg-red {
+  background: #f24435;
 }
