@@ -8,6 +8,8 @@ body {
   display: flex;
   align-items: center;
   background-color: #2c2d33;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 button {
   outline: none;
@@ -20,23 +22,44 @@ button {
   background-color: #1f1f1f;
   height: 80px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
+  justify-items: center;
 }
 .bar > div {
-  flex-shrink: 1;
+  width: 100%;
 }
 
-.main-toolbar {
+.bar > .main-toolbar {
   height: 50px;
-  width: 250px;
+  max-width: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 1000px;
   background: #2b2b33;
 }
+
+.secondary-toolbar {
+  display: flex;
+}
+
+.secondary-toolbar .toolbar-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.secondary-toolbar .toolbar-item p {
+  margin-top: 6px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Helpers */
 
 .divider {
   width: 1px;
