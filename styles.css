@@ -27,6 +27,12 @@ button {
   align-items: center;
   justify-items: center;
 }
+
+@media (max-width: 660px) {
+  .bar {
+    grid-template-columns: 10px 1fr 10px;
+  }
+}
 .bar > div {
   width: 100%;
 }
@@ -71,6 +77,16 @@ button {
 }
 
 /* Helpers */
+
+.hide-sm {
+  display: unset;
+}
+
+@media (max-width: 660px) {
+  .hide-sm {
+    display: none !important;
+  }
+}
 
 .divider {
   width: 1px;
