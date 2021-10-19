@@ -89,11 +89,13 @@ button {
   margin: 0 20px;
 }
 .secondary-toolbar .toolbar-item p {
-  margin-top: 10px;
+  margin-top: 8px;
+  font-size: 14px;
   text-align: center;
   color: white;
   white-space: nowrap;
   overflow: hidden;
+  margin-bottom: 0;
 }
 
 /* Helpers */
