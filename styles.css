@@ -20,7 +20,7 @@ button {
 }
 .bar-wrapper {
   width: 100vw;
-  position: absolute;
+  position: sticky;
   bottom: 10px;
 }
 .bar {
