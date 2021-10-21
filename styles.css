@@ -90,7 +90,7 @@ button {
 }
 .secondary-toolbar .toolbar-item p {
   margin-top: 8px;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   color: white;
   white-space: nowrap;
@@ -138,13 +138,17 @@ button {
 .bg-red {
   background: #f24435;
 }
-/* Small Devices */
-@media (max-width: 500px) {
+
+/* Large Devices */
+@media (max-width: 1024px) {
   .bar {
-    grid-template-columns: 0px 1fr 40px;
+    width: 100%;
   }
-  .hide-sm {
-    display: none !important;
+  .bar-wrapper {
+    padding: 0 10px;
+  }
+  .secondary-toolbar .toolbar-item {
+    margin: 0 10px;
   }
 }
 /* Medium Devices */
@@ -156,15 +160,16 @@ button {
     display: none !important;
   }
 }
-/* Large Devices */
-@media (max-width: 1024px) {
-  .bar {
-    width: 100%;
-  }
+/* Small Devices */
+@media (max-width: 500px) {
   .bar-wrapper {
-    padding: 0 10px;
+    padding: 0 5px;
   }
-  .secondary-toolbar .toolbar-item {
-    margin: 0 10px;
+  .bar {
+    grid-template-columns: 0px 1fr 35px;
+    padding: 0 15px;
+  }
+  .hide-sm {
+    display: none !important;
   }
 }
