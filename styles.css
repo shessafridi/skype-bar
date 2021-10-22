@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -19,7 +20,7 @@ button {
 }
 .bar-wrapper {
   width: 100vw;
-  position: absolute;
+  position: sticky;
   bottom: 10px;
 }
 .bar {
@@ -59,11 +60,6 @@ button {
   height: 0;
 }
 
-@media (max-width: 660px) {
-  .bar {
-    grid-template-columns: 10px 1fr 10px;
-  }
-}
 .bar > div {
   width: 100%;
 }
@@ -92,19 +88,14 @@ button {
   align-items: center;
   margin: 0 20px;
 }
-
-@media (max-width: 996px) {
-  .secondary-toolbar .toolbar-item {
-    margin: 0 10px;
-  }
-}
-
 .secondary-toolbar .toolbar-item p {
-  margin-top: 10px;
+  margin-top: 6px;
+  font-size: 12px;
   text-align: center;
   color: white;
   white-space: nowrap;
   overflow: hidden;
+  margin-bottom: 0;
 }
 
 /* Greeting */
@@ -149,14 +140,8 @@ button {
 
 /* Helpers */
 
-.hide-sm {
+.hide-md {
   display: unset;
-}
-
-@media (max-width: 660px) {
-  .hide-sm {
-    display: none !important;
-  }
 }
 
 .divider {
@@ -192,4 +177,39 @@ button {
 }
 .bg-red {
   background: #f24435;
+}
+
+/* Large Devices */
+@media (max-width: 1024px) {
+  .bar {
+    width: 100%;
+  }
+  .bar-wrapper {
+    padding: 0 10px;
+  }
+  .secondary-toolbar .toolbar-item {
+    margin: 0 10px;
+  }
+}
+/* Medium Devices */
+@media (max-width: 768px) {
+  .bar {
+    grid-template-columns: 50px 1fr 50px;
+  }
+  .hide-md {
+    display: none !important;
+  }
+}
+/* Small Devices */
+@media (max-width: 500px) {
+  .bar-wrapper {
+    padding: 0 5px;
+  }
+  .bar {
+    grid-template-columns: 0px 1fr 35px;
+    padding: 0 15px;
+  }
+  .hide-sm {
+    display: none !important;
+  }
 }
