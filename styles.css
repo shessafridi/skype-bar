@@ -213,3 +213,19 @@ button {
     display: none !important;
   }
 }
+
+.counter {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #e44265;
+  color: white;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  font-size: 10px;
+}
+
+.counter-wrapper {
+  position: relative;
+}
