@@ -179,6 +179,31 @@ button {
   background: #f24435;
 }
 
+.counter {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #e44265;
+  color: white;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  font-size: 10px;
+}
+
+.counter-wrapper {
+  position: relative;
+}
+
+.dropdown-menu-dark {
+  background: #1a1a1a;
+}
+
+.dropdown-menu-dark .dropdown-item.active,
+.dropdown-menu-dark .dropdown-item:active {
+  background: #2c2d33;
+}
+
 /* Large Devices */
 @media (max-width: 1024px) {
   .bar {
@@ -212,20 +237,8 @@ button {
   .hide-sm {
     display: none !important;
   }
-}
-
-.counter {
-  position: absolute;
-  top: -8px;
-  right: -10px;
-  background: #e44265;
-  color: white;
-  height: 15px;
-  width: 15px;
-  border-radius: 100%;
-  font-size: 10px;
-}
-
-.counter-wrapper {
-  position: relative;
+  .more-dropdown {
+    width: 85vw;
+    max-width: 300px;
+  }
 }
